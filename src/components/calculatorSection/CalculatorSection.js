@@ -301,7 +301,7 @@ const CalculatorSection = () => {
   };
 
   return (
-    <div>
+    <div className="calculator-container">
       <Result display={display} result={result} onSpanClick={onSpanClick} />
       <KeyPad
         onClick={handleButtonClick}

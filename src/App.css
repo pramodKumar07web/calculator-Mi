@@ -7,9 +7,16 @@ body {
   background: rgba(59, 59, 59, 0.938);
 }
 
+@media only screen and (min-width: 640px) {
+  .main-container {
+    width: 340px;
+  }
+  .keypad_section{
+  }
+}
 @media only screen and (max-width: 399px) {
   .main-container {
-    min-width: 100%;
+    /* min-width: 100%; */
     height: 100vh;
   }
   .keypad_section{
@@ -23,8 +30,9 @@ body {
 
 @media only screen and (min-device-width: 400px) and (max-device-width: 800px) and (orientation: landscape) {
   .main-container {
-    width: 100%;
+    /* min-width: 100%; */
     min-height: 100vh;
+    
   }
 }
 
@@ -36,10 +44,14 @@ body {
 }
 
 .main-container {
-  width: 340px;
+  /* width: 340px; */
   background: rgba(255, 255, 255);
-  min-height: 610px;
+  /* min-height: 610px; */
+   height: 100vh;
 
+}
+.calculator-container{
+height: 85vh;
 }
 .nav-container {
   padding: 10px 0px;
@@ -60,7 +72,8 @@ body {
 }
 .result-container {
   position: relative;
-  height: 210px;
+  /* height: 210px; */
+  height: 35%;
   /* overflow-y: scroll; */
   word-break: break-all;
   font-size: 22px;
@@ -102,6 +115,7 @@ body {
 }
 
 .keypad-container {
+  height: 65%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
