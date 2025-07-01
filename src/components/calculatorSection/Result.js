@@ -11,6 +11,7 @@ const Result = ({ display = [], result, onSpanClick }) => {
     setPreExpression(preExp);
   }, [displayText]);
 
+   useEffect(() => {
   const scrollToBottom = () => {
     const resultContainer = document.querySelector(".result-container"); // ✅ Fixed selector
     if (resultContainer) {
@@ -35,7 +36,7 @@ const Result = ({ display = [], result, onSpanClick }) => {
   };
 
   // Runs when `preExpression` updates
-  useEffect(() => {
+  // useEffect(() => {
     scroll(preExpression);
   }, [preExpression]); // ✅ Now scrolls whenever history updates
 
